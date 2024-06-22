@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ToDo App</string>
+    <string name="my_to_dos">My To Dos</string>
+    <string name="done_amount">Done - </string>
+    <string name="save">SAVE</string>
+    <string name="what_need_to_do">What need to do…</string>
+    <string name="priority">Priority</string>
+    <string name="do_up_to">Do up to</string>
+    <string name="delete">Delete</string>
+    <string name="to_do" translatable="false">To Do</string>
+
+    <string-array name="Priority">
+        <item>Normal</item>
+        <item>Low</item>
+        <item>High</item>
+    </string-array>
 </resources>
