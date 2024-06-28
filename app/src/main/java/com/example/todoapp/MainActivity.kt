@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         //val view: FragmentContainerView = findViewById(R.id.fragment_todo_list_view)
 
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
