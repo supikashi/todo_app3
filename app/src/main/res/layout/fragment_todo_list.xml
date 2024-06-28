@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_primary"
+    tools:context=".TodoListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+
+            android:text="@string/my_to_dos"
+            style="@style/LargeTitle"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/done_amount"
+                style="@style/Body"
+                android:textColor="@color/label_tertiary"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visibility"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="24dp"
+                app:tint="@color/color_blue" />
+        </FrameLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvTodoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_secondary"
+            android:layout_marginHorizontal="8dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        app:backgroundTint="@color/color_blue"
+        android:foreground="@drawable/ic_add_todo"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:foregroundTint="@color/color_white"
+        />
+</FrameLayout>

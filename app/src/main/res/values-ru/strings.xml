@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Мои дела</string>
+    <string name="my_to_dos">Мои дела</string>
+    <string name="done_amount">Выполнено - </string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="what_need_to_do">Что нужно сделать…</string>
+    <string name="priority">Важность</string>
+    <string name="do_up_to">Сделать до</string>
+    <string name="delete">Удалить</string>
+
+    <string-array name="Priority">
+        <item>Обычная</item>
+        <item>Низкая</item>
+        <item>Высокая</item>
+    </string-array>
+</resources>
